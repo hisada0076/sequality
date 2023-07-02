@@ -13,4 +13,28 @@ public class AppTest {
     assertNotNull("app should have a greeting", classUnderTest.getGreeting());
   }
 
+  @Test
+  public void testAppReternHelloWorld() {
+    App classUnderTest = new App();
+    assertEquals("Hello World!", classUnderTest.getGreeting());
+  }
+
+  @Test
+  public void testSumAandB() {
+    App classUnderTest = new App();
+    int expected = 5;
+    assertEquals(expected, App.sumAandB(2, 3));
+  }
+
+  public void testSumAtoB() {
+    App classUnderTest = new App();
+    int expected = 55;
+    assertEquals(expected, App.sumAtoB(1, 10));
+  }
+
+  public void testSumOddandEven() {
+    App classUnderTest = new App();
+    int[] expected = { 25, 30 };
+    assertEquals(expected, App.sumOddandEven(1, 10));
+  }
 }
