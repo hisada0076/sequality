@@ -21,10 +21,6 @@ public class App {
     Calculate calculate = new Calculate();
 
     for (int i = 1; i <= 10; i++) {
-      if (i == 1)
-        x = 1;
-      if (i == 10)
-        y = 10;
       a = calculate.sum(a, i);
     }
     return a;
